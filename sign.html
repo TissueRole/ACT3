@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+        margin: 0;
+        padding: 0;
+        background-image: url(Mindanoa.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+
+      }
+      .title {
+        background-color: rgba(0, 101, 240, 0.8);
+        width: 100%;
+        height: 70px;
+        max-width: 1920px;
+        display: flex;
+        align-items: center;
+        transition: 0.15s;
+      }
+      .title:hover {
+        background-color: rgba(0, 101, 240, 1);
+      }
+      .title:hover .tpage,
+      .title:hover .about,
+      .title:hover .article,
+      .title:hover .sign {
+        transition: 0.15s;
+      }
+      a {
+        color: white;
+      }
+      .tpage {
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5%;
+      }
+      .about {
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5%;
+      }
+      .article {
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5%;
+      }
+      .sign {
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 58%;
+        display: flex;
+      }
+      .container2{
+
+        border-radius: 5px;
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+        height: 65%;
+        box-shadow: 0px 5px 15px 4px rgba(0, 0, 0,.5);
+ 
+      }
+      .container{
+        border-radius:4px;
+        width: 90%;
+        height: 60%;
+        padding:20px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      h1 {
+            margin-bottom: 5%px;
+           text-align:center;
+            margin-top:5%;
+            color: white;
+        }
+        form {
+            flex-direction: column;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label {
+            font-weight: bold;
+            color: white;
+        }
+        input[type="text"] {
+            width: 95.5%;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        button[type="submit"] {
+            border-radius:2px;
+            width: 100%;
+            color: white;
+            font-size: 20px;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            background-color: rgba(0, 101, 240, .8);
+        }
+        button[type="submit"]:hover {
+            background-color: rgba(0, 101, 240, 1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="title">
+        <a class="tpage" href="index.html">TITLE PAGE</a>
+        <a class="about" href="about.html">ABOUT US</a>
+        <a class="article" href="article.html">ARTICLE</a>
+        <a class="sign" href="sign.html">SIGN UP</a>
+      </nav>
+      <form>
+        <div class="container2">
+        <h1>Sign In</h1>
+        <div class="container">
+          <label for="email"><b>Username</b></label>
+          <input type="text" name="Email" placeholder="Enter Username">
+          <label for="email"><b>Email</b></label>
+          <input type="text" name="Email" placeholder="Enter Email">
+          <label for="password"><b>Password</b></label>
+          <input type="text" name="Password" placeholder="Enter Password">
+        <button type="submit" name="Submit" >Submit</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
